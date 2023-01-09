@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <style>   
+      
+      .booking .book-form{
+         
+            width: 70rem;
+            height: 100rem;
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: auto;
+            flex-direction: column;
+            border-radius: 0.5rem;
+            box-shadow: 0 1rem 3rem #000;
+            padding: 5rem;
+            margin-top: -50px;
+         
+         
+      }
+     
+     
+   </style>
+
+
+
+   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>-->
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+   <div class="nav-identity">
+        <a href="home.html" class="logo"><img style="float:left;" src="images/LOGO.png" alt="travel"  width="60%" ></a><br>
+        <h1><a href="home.html"><b>PlanTrip</b></a></h1>
+        
+   </div>
+     <nav class="navbar">
+      <a href="home.html">HOME</a>
+      <a href="#aboutus">ABOUT</a>
+      <a href="#welcome-text">PACKAGE</a>
+      <a href="book.html">BOOK</a>
+      <a href="#contact">CONTACT US</a>
+      <a href="login/login.php">SIGN IN</a>
+      
+    </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+    
+ 
+ <!-- booking section starts  -->
+ 
+ <section class="booking">
+
+ 
+    <form action="book_form.php" method="post" class="book-form">
+ 
+       <div class="flex">
+          <div class="inputBox">
+             <span>name :</span>
+             <input type="text" placeholder="enter your name" name="name">
+          </div>
+          <div class="inputBox">
+             <span>email :</span>
+             <input type="email" placeholder="enter your email" name="email">
+          </div>
+          <div class="inputBox">
+             <span>phone :</span>
+             <input type="number" placeholder="enter your number" name="phone">
+          </div>
+          <div class="inputBox">
+             <span>address :</span>
+             <input type="text" placeholder="enter your address" name="address">
+          </div>
+          <div class="inputBox">
+             <span>where to :</span>
+             <input type="text" placeholder="place you want to visit" name="location">
+          </div>
+          <div class="inputBox">
+             <span>how many :</span>
+             <input type="number" placeholder="number of guests" name="guests">
+          </div>
+          <div class="inputBox">
+             <span>arrivals :</span>
+             <input type="date" name="arrivals">
+          </div>
+          <div class="inputBox">
+             <span>leaving :</span>
+             <input type="date" name="leaving">
+          </div>
+       </div>
+ 
+       <input type="submit" value="submit" class="btn" name="send">
+ 
+    </form>
+ 
+ </section>
+ 
+ <!-- booking section ends -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
